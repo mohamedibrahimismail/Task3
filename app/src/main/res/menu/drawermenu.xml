@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view"
+    >
+    <group android:checkableBehavior="single" >
+        <item android:id="@+id/home" android:title="Home" android:icon="@drawable/ic_home"/>
+        <item android:id="@+id/My_Profile" android:title="My Profile" android:icon="@drawable/ic_account"/>
+        <item android:id="@+id/Events" android:title="Events" android:icon="@drawable/ic_event"/>
+        <item android:id="@+id/Favorites" android:title="Favorites" android:icon="@drawable/ic_favorite"/>
+        <item android:id="@+id/Inpox"
+            app:actionViewClass="android.widget.TextView"
+            android:title="Inpox"
+            android:icon="@drawable/ic_mail"
+            />
+    </group>
+    <item tools:ignore="MenuTitle"  app:actionLayout="@layout/seperator" />
+
+            <item android:id="@+id/Contact_us" android:title="Contact us" android:icon="@drawable/ic_contact_us"/>
+            <item android:id="@+id/Feed_back" android:title="Feed back" android:icon="@drawable/ic_feed_back"/>
+            <item android:id="@+id/Settings" android:title="Settings" android:icon="@drawable/ic_settings"/>
+
+
+    <item  tools:ignore="MenuTitle"   app:actionLayout="@layout/dashboard_header" />
+
+    <item  tools:ignore="MenuTitle"   app:actionLayout="@layout/dashboard" />
+
+    <item  tools:ignore="MenuTitle"   app:actionLayout="@layout/logout" />
+
+
+</menu>
